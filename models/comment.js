@@ -30,17 +30,9 @@ Comment.init({
         type: DataTypes.STRING,
         allowNull: false,
     },
-    created_at: {
-        type: DataTypes.DATE,
-        allowNull: false,
-    },
-    updated_at: {
-        type: DataTypes.DATE,
-        allowNull: true,
-    },
     sequelize: db,
     modelName: 'comment',
-    timestamps: false,
+    timestamps: true,
     indexes: [{
         unique: false,
         fields: ['userId', 'productId']
