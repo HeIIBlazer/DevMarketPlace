@@ -1,5 +1,4 @@
 const User = require('../models/user');
-const { Op } = require('sequelize');
 
 exports.getUsers = async (req, res) => {
     User.findAll()

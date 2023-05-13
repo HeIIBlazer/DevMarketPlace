@@ -1,8 +1,8 @@
 module.exports = app => {
-    const controller = require('./controllers/product.controller.js');
+    const controller = require('../controllers/product.controller');
     const router = require('express').Router();
 
-    router.get('/', controller.getProduct);
+    router.get('/', controller.getProducts);
     router.post('/', controller.CreateProduct);
     router.put('/', controller.UpdateProduct);
     router.delete('/', controller.DeleteProduct);

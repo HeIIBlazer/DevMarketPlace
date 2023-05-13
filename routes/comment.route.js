@@ -1,5 +1,5 @@
 module.exports = app => {
-    const controller = require('./controllers/commentController.js');
+    const controller = require('../Controllers/comment.Controller');
     const router = require('express').Router();
 
     router.get('/', controller.getComments);

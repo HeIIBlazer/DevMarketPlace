@@ -1,5 +1,5 @@
 module.exports = app => {
-    const controller = require('./controllers/tag.controller.js');
+    const controller = require('../controllers/tag.controller.js');
     const router = require('express').Router();
 
     router.get('/', controller.getTags);
